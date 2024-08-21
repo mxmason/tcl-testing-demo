@@ -1,0 +1,33 @@
+.Header,
+.Nav {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.Header a {
+	color: inherit;
+}
+
+.Nav {
+	gap: 8px;
+	margin-left: auto;
+
+	& a {
+		font-size: 1.2em;
+	}
+}
+
+.Footer {
+	align-items: center;
+	display: flex;
+	font-size: 1.1em;
+	margin-top: auto;
+	padding: 8px;
+	justify-content: center;
+}
+
+.BrandLogo {
+	font-size: 2em;
+	text-decoration: none;
+}

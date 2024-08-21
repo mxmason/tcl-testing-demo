@@ -1,0 +1,56 @@
+.Disclosure {
+	--spacing: 8px;
+
+	& > * {
+		padding: var(--spacing);
+	}
+}
+
+.Disclosure-summary {
+	align-items: center;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	font-size: 2em;
+	font-weight: 500;
+	gap: var(--spacing);
+	line-height: 1;
+	text-align: start;
+	width: max-content;
+}
+
+.Disclosure-content {
+	font-size: 1.2em;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+
+	.Disclosure[data-open] & {
+		height: auto;
+		height: calc-size(auto);
+		opacity: 1;
+		padding: var(--spacing);
+		padding-top: calc(var(--spacing) / 2);
+	}
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+}
+
+.Disclosure-indicator {
+	height: 24px;
+	margin-top: 2px;
+	width: 24px;
+
+	.Disclosure[data-open] & {
+		transform: rotate(45deg);
+	}
+
+	@media only screen and (prefers-color-scheme: dark) {
+		filter: invert(1);
+	}
+}
