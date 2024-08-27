@@ -28,10 +28,10 @@ export function Disclosure({ children, label, open = false }) {
 
 	return (
 		<div className="Disclosure" data-open={dataOpen}>
-			<div className="Disclosure-summary" onClick={handleClick}>
+			<button className="Disclosure-summary" onClick={handleClick}>
 				<img alt="" className="Disclosure-indicator" src={PlusIcon} />
 				<span>{label}</span>
-			</div>
+			</button>
 			<div className="Disclosure-content">{children}</div>
 		</div>
 	);

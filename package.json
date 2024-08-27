@@ -1,45 +1,49 @@
 {
-  "name": "tcl-testing-demo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "vite --open",
-    "test": "vitest",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.5.2",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
-    "eslint-plugin-react-refresh": "^0.4.11",
-    "globals": "^15.9.0",
-    "husky": "^9.1.5",
-    "jsdom": "^25.0.0",
-    "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3",
-    "vite": "^5.4.2",
-    "vitest": "^2.0.5"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": ["eslint --cache --fix", "prettier --write"],
-    "*.{css,md}": "prettier --write"
-  }
+	"name": "tcl-testing-demo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"start": "vite --open",
+		"test": "vitest",
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.9.1",
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/jest-dom": "^6.5.0",
+		"@testing-library/react": "^16.0.0",
+		"@testing-library/user-event": "^14.5.2",
+		"@types/react": "^18.3.4",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^9.9.1",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-react": "^7.35.0",
+		"eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
+		"eslint-plugin-react-refresh": "^0.4.11",
+		"globals": "^15.9.0",
+		"husky": "^9.1.5",
+		"jsdom": "^25.0.0",
+		"lint-staged": "^15.2.9",
+		"postcss-nesting": "^13.0.0",
+		"prettier": "^3.3.3",
+		"vite": "^5.4.2",
+		"vitest": "^2.0.5"
+	},
+	"lint-staged": {
+		"*.{js,jsx}": [
+			"eslint --cache --fix",
+			"prettier --write"
+		],
+		"*.{css,md}": "prettier --write"
+	}
 }
