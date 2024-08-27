@@ -5,8 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(() => {
 	return {
 		plugins: [react()],
+		server: {
+			host: true,
+			open: true,
+		},
 		test: {
-			css: true,
 			globals: true,
 			environment: 'jsdom',
 			setupFiles: './setup-vitest.js',
